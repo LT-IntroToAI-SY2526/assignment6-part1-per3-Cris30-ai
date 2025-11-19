@@ -1,7 +1,7 @@
 """
 Assignment 6 Part 1: Student Performance Prediction
-Name: _______________
-Date: _______________
+Name: _Cristian____
+Date: _Jacome______
 
 This assignment predicts student test scores based on hours studied.
 Complete all the functions below following the in-class ice cream example.
@@ -26,6 +26,7 @@ def load_and_explore_data(filename):
         pandas DataFrame containing the data
     """
     # TODO: Load the CSV file using pandas
+    data = pd.read_csv(filename)
     
     # TODO: Print the first 5 rows
     
