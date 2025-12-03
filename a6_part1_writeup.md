@@ -10,7 +10,7 @@
 ### Question 1: R² Score Interpretation
 What does the R² score tell you about your model? What does it mean if R² is close to 1? What if it's close to 0?
 
-**YOUR ANSWER:**
+**YOUR ANSWER:** The R^2 score informs us how accurate the model shows the different level of variation in student scores. Additionally, to measures the change in scores by making a predication based on the change in hours studied.  If R^2 is near 1, it suggest that the model predicts the data extremely well and that number of hours studied influences scores. However, if R^2 is close to 0 it means the relationship and prediction between hours studied and scores is not accurate.
 
 
 
@@ -20,7 +20,7 @@ What does the R² score tell you about your model? What does it mean if R² is c
 ### Question 2: Mean Squared Error (MSE)
 What does the MSE (Mean Squared Error) mean in plain English? Why do you think we square the errors instead of just taking the average of the errors?
 
-**YOUR ANSWER:**
+**YOUR ANSWER:** MSE in plain English tells us the error amount in squared points(how much the model is off by when predciting hours studied to scores earned). We sqaure the errors because makes the errors positve, preventing them from canceling out. Additionally, we sqaure the errors to show the model that bigger mistakes make larger errors, reinforcing them to make less errors. 
 
 
 
@@ -32,7 +32,7 @@ Would you trust this model to predict a score for a student who studied 10 hours
 - What's the maximum hours in your dataset?
 - What happens when you make predictions outside the range of your training data?
 
-**YOUR ANSWER:**
+**YOUR ANSWER:** I would be extemely cautious because the maximum hour studied in the dataset was 9.6. Since the 10 hours is outside the data range linear regression wouldn't work as well. This would create something I learned in middle school called extrapolation, which could give a wildly wrong prediction. 
 
 
 
@@ -47,7 +47,7 @@ Looking at your scatter plot, describe the relationship between hours studied an
 - Linear or non-linear?
 - Positive or negative?
 
-**YOUR ANSWER:**
+**YOUR ANSWER:** After looking at my scatter plot, the relationship between hours studied and test socres is strong(points closed otgether), linear(trend looks like a straight line), a positive(trend line increases as hours studied increases).
 
 
 
@@ -58,9 +58,9 @@ Looking at your scatter plot, describe the relationship between hours studied an
 What are some real-world factors that could affect test scores that this model doesn't account for? List at least 3 factors.
 
 **YOUR ANSWER:**
-1. 
-2. 
-3. 
+1. 504 Plan/ IEP 
+2. Sleep/ mental health
+3. Quality of Note taking
 
 
 ---
@@ -71,7 +71,7 @@ What are some real-world factors that could affect test scores that this model d
 Why do we split our data into training and testing sets? What would happen if we trained and tested on the same data?
 
 **YOUR ANSWER:**
-
+We slpit our data into training and testing sets to train the model with data so that it can get familiar with itself. Then we implement testing data to test if the model works on newly introduced datat. I we trained and tested on the same data the model would memeorize the answers, rather than performing its functions.  
 
 
 
@@ -82,7 +82,7 @@ What was the most challenging part of this assignment for you? How did you overc
 
 **YOUR ANSWER:**
 
-
+The most challenging part for me was remember what linear regression was. But once I heared Mr.Berg presentation I remember that linear regression is a model that predicts/estimates the relationship between x and y variables. 
 
 
 ---
@@ -97,7 +97,10 @@ Describe one real-world problem you could solve with linear regression. What wou
 
 **YOUR ANSWER:**
 
-
+Relationship between price of house in correlation to sqaure footage per house. 
+Feature(x) = Sqaure footage per house
+Feature(Y)= Price of the house 
+This relationship might be linear because the bigger a house is(square footage) the more expensive the listing of the house will be. 
 
 
 ---
